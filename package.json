@@ -1,7 +1,7 @@
 {
-  "name": "webapplicationseed",
+  "name": "deadpool",
   "version": "1.0.0",
-  "description": "StepChange Angular2 Application Seed",
+  "description": "StepChange Deadpool Web App",
   "main": "index.html",
   "scripts": {
     "preinstall": "npm install -g webdriver-manager rimraf",
