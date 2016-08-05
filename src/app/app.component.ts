@@ -7,8 +7,8 @@ import { ConfigurationService } from './configuration-service';
 	directives: [MdIcon],
 	providers: [MdIconRegistry],
 	template: `
-		<div class='container'>		
-      <md-icon>build</md-icon>
+		<div class='container'>
+			<md-icon>build</md-icon>
 			<img src='./assets/images/logo.jpg' />
 			<h1 class='title'>{{name}} - version {{version}}</h1>
 			<h2 class='sub-title'>I feel the need, the need for seed!</h2>
