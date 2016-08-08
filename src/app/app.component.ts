@@ -1,6 +1,6 @@
-import { OnInit, Component } from "@angular/core";
-import { MdIcon, MdIconRegistry } from "@angular2-material/icon";
-import { ConfigurationService } from "./configuration-service";
+import { OnInit, Component } from '@angular/core';
+import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import { ConfigurationService } from './configuration-service';
 
 @Component({
 	selector: 'fcc-app',
