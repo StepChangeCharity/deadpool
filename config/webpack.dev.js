@@ -11,7 +11,7 @@ var helpers = require('./helpers');
 const ENV = 'development';
 const METADATA = webpackMerge(commonConfig.metadata, {
 	host: 'localhost',
-  	port: 3000,
+	port: 3000,
 	ENV: ENV,
 });
 

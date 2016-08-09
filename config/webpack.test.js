@@ -59,7 +59,7 @@ module.exports = function () {
 	config.ts = {
 		compilerOptions: {
 			sourceMap: false,
-			sourceRoot: helpers.root('src'),
+			sourceRoot: helpers.root('src/app'),
 			inlineSourceMap: true
 		}
 	};
