@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://fcctfs:8080/tfs/tfssandpit/FrontEndApplications/_git/WebApplicationSeed"
+    "url": "https://github.com/StepChangeCharity/deadpool.git"
   },
   "author": "StepChange",
   "license": "ISC",
@@ -50,7 +50,7 @@
     "@angular/http": "2.0.0-rc.4",
     "@angular/platform-browser": "2.0.0-rc.4",
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
-    "@angular/router": "^3.0.0-alpha.8",
+    "@angular/router": "3.0.0-alpha.8",
     "core-js": "^2.4.0",
     "raven-js": "^3.3.0",
     "reflect-metadata": "0.1.3",
