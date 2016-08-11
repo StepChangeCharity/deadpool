@@ -1,5 +1,5 @@
 import { OnInit, Component } from '@angular/core';
-import { ROUTER_DIRECTIVES, Router } from '@angular/router';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 import { MasterHeaderComponent } from '../master-header';
 
 @Component({
