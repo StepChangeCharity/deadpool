@@ -72,8 +72,6 @@ module.exports = function (config) {
     autoWatch: false,
 
     // start these browsers
-    browserNoActivityTimeout: 150000,
-    captureTimeout: 150000,
     browsers: ['Chrome'], // you can also use Chrome
 
     // Continuous Integration mode, if true, Karma captures browsers, runs the tests and exits

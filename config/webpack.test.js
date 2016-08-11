@@ -24,7 +24,6 @@ module.exports = function () {
 		preLoaders: [
 			{
 				test: /\.ts$/,
-				exclude: /node_modules/,
 				loader: "tslint"
 			}
 		],
