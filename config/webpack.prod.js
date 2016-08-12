@@ -11,7 +11,7 @@ var helpers = require('./helpers');  //  Include any shared helper functions
 const ENV = 'production';
 const METADATA = webpackMerge(commonConfig.metadata, {
 	host: 'localhost',
-  	port: 8080,
+	port: 9090,
 	ENV: ENV,
 });
 

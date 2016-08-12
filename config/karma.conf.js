@@ -6,6 +6,10 @@ var webpackConfig = require('./webpack.test');
 module.exports = function (config) {
   var _config = {
 
+    captureTimeout: 60000,
+    browserDisconnectTimeout: 60000, 
+    browserNoActivityTimeout: 60000, 
+
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
@@ -60,7 +64,7 @@ module.exports = function (config) {
     reporters: ['mocha', 'coverage', 'teamcity'],
 
     // web server port
-    port: 9876,
+    port: 9877,
 
     // enable / disable colors in the output (reporters and logs)
     colors: true,

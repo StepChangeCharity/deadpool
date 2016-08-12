@@ -5,7 +5,7 @@ var helpers = require('./helpers');
 
 exports.config = {
 	framework: 'jasmine',
-	baseUrl: 'http://localhost:8080/',
+	baseUrl: 'http://localhost:9090/',
 	specs: ['../src/app/**/*.e2e.ts'],
 	directConnect: true,
 
@@ -20,11 +20,5 @@ exports.config = {
 			})
 		);
 	},
-
-	/**
-	* Angular 2 configuration
-	*
-	* useAllAngular2AppRoots: tells Protractor to wait for any angular2 apps on the page instead of just the one matching 'rootEl'
-	*/
 	useAllAngular2AppRoots: true
 }
