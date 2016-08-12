@@ -7,7 +7,7 @@ var extractTextPlugin = require('extract-text-webpack-plugin');
 var webpackNotifierPlugin = require('webpack-notifier');
 
 const METADATA = {
-	title: 'StepChange Angular 2 Application Seed'
+	title: 'StepChange Deadpool'
 }
 
 module.exports = {
@@ -36,7 +36,6 @@ module.exports = {
 		preLoaders: [
 			{
 				test: /\.ts$/,
-				exclude: /node_modules/,
 				loader: "tslint"
 			}
 		],

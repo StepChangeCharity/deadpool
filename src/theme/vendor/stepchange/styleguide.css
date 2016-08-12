@@ -1,0 +1,105 @@
+body { margin:0; padding:0; background:#F6F5F2; }
+.c-site-main { max-width:980px; width:100%; margin:0 auto; display:block; position:relative; }
+main.c-site-main { border:1px solid #EEE; border-top:none; margin-top:45px; /*z-index:2;*/ background:#FFF; padding:1rem 0.5rem; min-height:1024px; }
+main.c-site-main--example { margin-top:115px; }
+
+@media only screen and (min-width:650px) {
+    main.c-site-main.js-resize--desktop { padding:2rem; margin-top:112px; }
+}
+
+.js-resize { transition:all 0.6s ease-out; }
+.js-resize--mobile { max-width:320px; }
+.js-resize--tablet { max-width:768px; }
+.js-resize--desktop { max-width:980px; }
+
+.device-icon { display:inline-block; background:url(/assets/images/devices.png) no-repeat; height:64px; width:32px; background-position:-4px -3px; }
+
+.device-icon--tablet { width:41px; background-position:-47px -3px; }
+.device-icon--desktop { width:73px; background-position:-100px -3px; }
+
+.banner-image, .js-resize--mobile .banner-image { max-width:none; width:100%; margin-bottom:2rem; }
+@media only screen and (min-width:650px) {
+    .js-resize--desktop .banner-image {
+        width:auto;
+        margin:-2rem -2rem 2rem -2rem;
+    }
+}
+
+/*JS*/
+.js-error-alert { display:none; }
+
+
+/*Colours */
+.swatch { float:left; margin:0 2rem 2rem 0; width:auto; }
+
+.swatch-spot {
+    border-radius:100%;
+    height:140px;
+    width:140px;
+    float:left;
+    cursor:pointer;
+}
+
+.swatch-spot--small { height:24px; width:24px; margin-right:0.5rem; float:none; display:inline-block; }
+
+.swatch-info { width:100%; margin-left:1rem; display:none; }
+@media only screen and (min-width:650px) {
+    .swatch-info { width:450px; }
+}
+.swatch-info p { padding:0 1rem 0 0; }
+
+.swatch-code { width:100%; text-align:center; display:block; margin-top:4rem; color:#333; opacity:0; transition:opacity 0.2s ease-out; font-size:1.2rem; }
+.swatch-code--white { color:#FFF; }
+.swatch-code--purple { color:#6B3374; }
+.swatch-code--red { color:#762220; }
+.swatch-spot:hover .swatch-code { opacity:1 !important; }
+
+.swatch-spot--purple { background:#6B3374; }
+.swatch-spot--orange { background:#F08B1E; }
+.swatch-spot--grey { background:#333333; }
+.swatch-spot--white { background:#FFF; border:solid 1px #AAA; }
+
+.swatch-spot--red { background:#762220; }
+.swatch-spot--bright-red { background:#BB2020; }
+.swatch-spot--light-red { background:#F7D8D8; color:#762220; }
+.swatch-spot--light-yellow { background:#FDE9A6; color:#333; }
+.swatch-spot--light-grey { background:#EEEEEE; color:#333; }
+.swatch-spot--light-purple { background:#F5EAFC; color:#6B3374; }
+.swatch-spot--grey-disabled { background:#F5F5F5; color:#333; }
+
+.swatch-spot--btn-orange { background:#E4541B; color:#FFF; }
+.swatch-spot--btn-orange-disabled { background:#F1A98D; color:#FFF; }
+
+.swatch-spot--trim-yellow { background:#FFB600; }
+.swatch-spot--trim-grey { background:#AAAAAA; color:#333; }
+
+
+
+
+/*Example code blocks*/
+code { word-wrap:break-word; margin-bottom:1rem; display:block; }
+.code-punctuation { color:#999; }
+.code-tag { color:#905; }
+.code-text { color:#333; }
+.code-attr-name { color:#690; }
+.code-attr-value { color:#07A; }
+
+/*Header*/
+.c-site-header { width:100%; background:#FFF; border:1px solid #EEE; border-bottom:solid 3px #FFB600; box-shadow:0px 3px 4px rgba(0,0,0,0.1); position:fixed; top:0; left:0; z-index:3; }
+.c-site-header__logo, .c-site-header--small .c-site-header__logo { margin:1rem; width:140px; }
+.c-site-header__nav { position:absolute; top:0; right:-200px; width:200px; transition:right 0.6s ease-out; background:#FFF; }
+.c-site-header__device-nav { display:none; }
+.nav-trigger:checked + .c-site-header .c-site-header__nav { right:0; }
+label[for=nav-trigger] { cursor:pointer; }
+
+@media only screen and (min-width:650px) {
+    .nav-trigger, label[for=nav-trigger] { display:none; }
+    .c-site-header__nav { margin-top:55px; position:relative; right:auto; width:auto; }
+    .c-site-header__device-nav { display:block; position:absolute; right:0; top:0; }
+    .c-site-header--small .c-site-header__nav, .c-site-header--small .c-site-header__device-nav { margin-top:20px; }
+    .c-site-header--small .c-site-header__device-nav { position:relative; }
+    .c-site-header__logo { width:auto; margin:1.5rem; }
+
+}
+/*Footer*/
+.c-site-footer { background:#6D6F71; padding:4rem 1rem 1rem 1rem; margin-top:-3rem; height:100px; color:#FFF; }
