@@ -59,6 +59,7 @@
     "codelyzer": "0.0.23",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
+    "cucumber": "^1.2.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "groc": "^0.8.0",
     "html-webpack-plugin": "^2.21.0",
