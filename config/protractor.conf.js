@@ -1,24 +1,31 @@
 require('ts-node/register');
-
-var jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 var helpers = require('./helpers');
-
 exports.config = {
-	framework: 'jasmine',
+
+	useAllAngular2AppRoots: true,
+
+	framework: 'custom',
+
+	frameworkPath: require.resolve('protractor-cucumber-framework'),
+
 	baseUrl: 'http://localhost:9090/',
-	specs: ['../src/app/**/*.e2e.ts'],
+	specs: [
+		helpers.root('src/app/**/*.feature')
+	],
+	cucumberOpts: {
+		require: [
+			helpers.root('src/app/**/*.steps.ts')
+		],
+		format: 'pretty'
+	},
 	directConnect: true,
 
-	onPrepare: function () {
-		jasmine.getEnv().addReporter(
-			new jasmine2HtmlReporter({
-				savePath: helpers.root('./automation/'),
-				screenshotsFolder: 'images',
-				takeScreenshots: true,
-				fixedScreenshotName: true,
-				filePrefix: 'index'
-			})
-		);
+	capabilities: {
+		'browserName': 'chrome'
 	},
-	useAllAngular2AppRoots: true
-}
+
+	onPrepare: function () {
+		browser.ignoreSynchronization = true;
+	}
+
+};
