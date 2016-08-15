@@ -20,8 +20,7 @@ class ApplicationFeatureSteps {
 	@then(/^the title should be '(.*)'$/)
 	public thenTitleShouldBe(title: string, callback: Callback): void {
 
-		expect(this.appPageObject.pageTitle()).to.become(title);
-		callback();
+		expect(this.appPageObject.pageTitle()).to.become(title).and.notify(callback);
 	};
 
 }
