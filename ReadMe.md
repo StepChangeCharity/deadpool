@@ -25,8 +25,5 @@ Go to http://localhost:8080 in your browser.
 # Stuff we used
 
 * [Angular 2](https://angular.io/)
-* [AngularMaterial2](https://github.com/angular/material2)
-* [Teradata Covalent](https://teradata.github.io/covalent)
-* [Material Design Lite](https://getmdl.io/)
 
 
