@@ -6,6 +6,10 @@ var webpackConfig = require('./webpack.test');
 module.exports = function (config) {
   var _config = {
 
+    captureTimeout: 60000,
+    browserDisconnectTimeout: 60000, 
+    browserNoActivityTimeout: 60000, 
+
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
@@ -17,7 +21,7 @@ module.exports = function (config) {
         'karma-coverage',
         'karma-webpack',
         'karma-sourcemap-loader',
-        'karma-chrome-launcher',
+        'karma-phantomjs-launcher',
         'karma-mocha-reporter',
         'karma-teamcity-reporter'
     ],
@@ -60,7 +64,7 @@ module.exports = function (config) {
     reporters: ['mocha', 'coverage', 'teamcity'],
 
     // web server port
-    port: 9876,
+    port: 9877,
 
     // enable / disable colors in the output (reporters and logs)
     colors: true,
@@ -72,7 +76,7 @@ module.exports = function (config) {
     autoWatch: false,
 
     // start these browsers
-    browsers: ['Chrome'], // you can also use Chrome
+    browsers: ['PhantomJS'], // you can also use Chrome
 
     // Continuous Integration mode, if true, Karma captures browsers, runs the tests and exits
     singleRun: true

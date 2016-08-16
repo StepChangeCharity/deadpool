@@ -11,7 +11,7 @@ var helpers = require('./helpers');  //  Include any shared helper functions
 const ENV = 'production';
 const METADATA = webpackMerge(commonConfig.metadata, {
 	host: 'localhost',
-  	port: 8080,
+	port: 9090,
 	ENV: ENV,
 });
 
@@ -40,22 +40,6 @@ module.exports = webpackMerge(commonConfig, {
 			compress: {screw_ie8: true, warnings: false},
 			comments: false
 		}),
-
-		// Copy static app configuration
-		new copyWebpackPlugin([
-			{
-				from: helpers.root('src/app.config.json'),
-				to: helpers.flatten('dist/')
-			}
-		]),
-
-		// Copy favicon to root of the output folder
-		new copyWebpackPlugin([
-			{
-				from: helpers.root('src/favicon.ico'),
-				to: helpers.flatten('dist/')
-			}
-		]),
 
 		// Generate the html output, injecting the bundles into a template
 		new htmlWebpackPlugin({

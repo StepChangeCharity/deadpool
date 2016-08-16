@@ -1,10 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 
-/**
- * Abstracts away application configuration.
- * TODO: This will be loaded from an external configuration file once we look at it
- */
 @Injectable()
 export class AppConfig {
 

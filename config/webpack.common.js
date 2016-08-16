@@ -7,7 +7,7 @@ var extractTextPlugin = require('extract-text-webpack-plugin');
 var webpackNotifierPlugin = require('webpack-notifier');
 
 const METADATA = {
-	title: 'StepChange Angular 2 Application Seed'
+	title: 'StepChange Deadpool'
 }
 
 module.exports = {
@@ -62,13 +62,23 @@ module.exports = {
 		]
 	},
 	plugins: [
-
-		// Copy static assets to the output folder
+		
 		new copyWebpackPlugin([
+			// Copy static assets to the output folder
 			{
-				from: helpers.root('src/assets'),
-				to: helpers.root('dist/assets')
-			}
+				from: 'src/assets',
+				to: 'assets'
+			},
+			// Copy favicon to root of the output folder
+			{
+				from: 'src/favicon.ico',
+				to: ''
+			},
+			// Copy app configuration
+			{
+				from: 'src/app.config.json',
+				to: ''
+			}					
 		]),
 
 		// Setup system tray notifications

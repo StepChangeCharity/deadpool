@@ -11,7 +11,7 @@ var helpers = require('./helpers');
 const ENV = 'development';
 const METADATA = webpackMerge(commonConfig.metadata, {
 	host: 'localhost',
-  	port: 3000,
+	port: 3000,
 	ENV: ENV,
 });
 
@@ -42,23 +42,6 @@ module.exports = webpackMerge(commonConfig, {
 		new htmlWebpackPlugin({
 			template: './src/index.html'
 		}),
-
-		// Copy favicon to root of the output folder
-		new copyWebpackPlugin([
-			{
-				from: helpers.root('src/favicon.ico'),
-				to: ''
-			}
-		]),
-
-		// Copy static app configuration
-		new copyWebpackPlugin([
-			{
-				from: helpers.root('src/app.config.json'),
-				to: ''
-			}
-		]),
-
 
 		// Set the environment to development
 		new webpack.DefinePlugin({
