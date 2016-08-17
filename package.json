@@ -27,10 +27,15 @@
     "e2e:prod": "npm run e2e -- --baseUrl=\"http://localhost:9090\"",
     "e2e:release": "npm run e2e -- --baseUrl=\"http://localhost:9999\"",
     "prebuildserver:e2e": "npm run build",
-    "buildserver:e2e": "node ./config/e2e-kill-processes.js",
+    "buildserver:e2e2": "npm run e2e:release",
+		"buildserver:e2e": "npm-run-all -p -r serve:release e2e:release",
+
     "prebuild": "npm run clean:build",
     "build": "webpack --config config/webpack.prod.js",
     "httpserver": "http-server -c-1",
+
+
+
     "serve:release": "npm run httpserver -- -p 9999 ./dist",
     "serve:automation": "npm run httpserver -- -o -p 9998 ./automation",
     "serve:coverage": "npm run httpserver -- -o -p 9997 ./coverage",
@@ -81,6 +86,7 @@
     "karma-teamcity-reporter": "^1.0.0",
     "karma-webpack": "^1.7.0",
     "node-sass": "^3.8.0",
+    "npm-run-all": "^3.0.0",
     "null-loader": "^0.1.1",
     "postcss-loader": "^0.9.1",
     "protractor": "^3.3.0",

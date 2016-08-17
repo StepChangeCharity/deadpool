@@ -3,7 +3,7 @@ import { HomeComponent } from '../home/home.component';
 
 const appRoutes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
-	{ path: 'home-fail', component: HomeComponent }
+	{ path: 'home', component: HomeComponent }
 ];
 
 export const appRoutingProviders: any[] = [

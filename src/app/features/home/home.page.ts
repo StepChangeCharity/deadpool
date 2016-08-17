@@ -6,7 +6,6 @@ export class HomePageObject {
 	private pageTitle;
 
 	constructor() {
-
 		this.pageTitle = element(by.id('pageTitle'));
 	}
 
