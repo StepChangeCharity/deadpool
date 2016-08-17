@@ -3,7 +3,8 @@ import Promise = webdriver.promise.Promise;
 
 export class ApplicationPageObject {
 
-  constructor() {  }
+	constructor() {
+	}
 
 	openApp(): Promise<void> {
 		return browser.get('');
