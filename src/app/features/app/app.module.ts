@@ -25,7 +25,10 @@ if (process.env.NODE_ENV === 'production') {
 		MasterHeaderComponent
 	],
 	bootstrap: [
-		AppComponent
+		AppComponent,
+		// https://github.com/angular/angular/issues/10618:
+		// Once the above is resolved the line below should be removed.
+		MasterHeaderComponent
 	],
 	providers: [
 		AppConfig,
