@@ -21,7 +21,7 @@
     "posttest": "npm run remaphtml && npm run remapteamcity",
     "remaphtml": "remap-istanbul -i coverage/json/coverage-final.json -o coverage -t html",
     "remapteamcity": "remap-istanbul -i coverage/json/coverage-final.json -o coverage/teamcity.txt -t teamcity && type coverage\\teamcity.txt",
-    "pree2e": "webdriver-manager update --standalone && npm run clean:automation",
+    "pree2e": "npm run clean:automation",
     "e2e": "protractor config/protractor.conf.js",
     "e2e:dev": "npm run e2e -- --baseUrl=\"http://localhost:3000\"",
     "e2e:prod": "npm run e2e -- --baseUrl=\"http://localhost:9090\"",
