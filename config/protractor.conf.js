@@ -24,7 +24,10 @@ exports.config = {
 	directConnect: true,
 
 	capabilities: {
-		'browserName': 'chrome'
+		'browserName': 'chrome',
+		chromeOptions: {
+			args: ['--no-sandbox']
+		}
 	},
 
 	onPrepare: function () {
