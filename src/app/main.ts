@@ -6,4 +6,3 @@ import { AppModule } from './features/app';
 
 // Compile and launch the module
 platformBrowserDynamic().bootstrapModule(AppModule);
-
