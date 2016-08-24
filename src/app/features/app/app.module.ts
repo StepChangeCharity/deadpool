@@ -3,7 +3,7 @@ import { HTTP_PROVIDERS } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoggingService, LoggingErrorHandler } from '../../core/services/logging-service';
 import { AppComponent } from './app.component';
-import { HomeComponent } from '../home/home.component';
+import { EligibilityCheckComponent } from '../eligibility-check/eligibility-check.component';
 import { AppConfig } from '../../core/models/app-config';
 import { ConfigurationService } from '../../core/services/configuration-service';
 import { MasterHeaderComponent } from '../master-header';
@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'production') {
 	],
 	declarations: [
 		AppComponent,
-		HomeComponent,
+		EligibilityCheckComponent,
 		MasterHeaderComponent
 	],
 	bootstrap: [

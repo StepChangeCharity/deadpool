@@ -1,9 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
+import { EligibilityCheckComponent } from '../eligibility-check/eligibility-check.component';
 
 const appRoutes: Routes = [
-	{ path: '', redirectTo: '/home', pathMatch: 'full' },
-	{ path: 'home', component: HomeComponent }
+	{ path: '', redirectTo: '/eligibility-check', pathMatch: 'full' },
+	{ path: 'eligibility-check', component: EligibilityCheckComponent }
 ];
 
 export const appRoutingProviders: any[] = [

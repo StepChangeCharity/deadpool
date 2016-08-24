@@ -1,7 +1,7 @@
 import ElementArrayFinder = protractor.ElementArrayFinder;
 import Promise = webdriver.promise.Promise;
 
-export class HomePageObject {
+export class EligibilityCheckPageObject {
 
 	private pageTitle;
 
