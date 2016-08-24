@@ -9,15 +9,18 @@ exports.config = {
 	frameworkPath: require.resolve('protractor-cucumber-framework'),
 
 	baseUrl: 'http://localhost:9090/',
+
 	specs: [
 		helpers.root('src/app/**/*.feature')
 	],
+
 	cucumberOpts: {
 		require: [
 			helpers.root('src/app/**/*.steps.ts')
 		],
 		format: 'pretty'
 	},
+
 	directConnect: true,
 
 	capabilities: {

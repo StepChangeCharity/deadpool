@@ -1,10 +1,7 @@
 Feature: This feature describe the scenarios of any user opening the application
 
-  Scenario Outline: Opening the application
+  Scenario: Opening the application
 
-    Given <user> opens the application
-    Then the title should be <title>
+    Given anyone opens the application
+    Then the title should be 'StepChange Deadpool'
 
-    Examples:
-      | user    | title               |
-      | anyone  | 'StepChange Deadpool' |

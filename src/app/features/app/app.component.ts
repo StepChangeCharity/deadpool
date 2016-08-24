@@ -1,10 +1,7 @@
 import { OnInit, Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
-import { MasterHeaderComponent } from '../master-header';
 
 @Component({
 	selector: 'fcc-app',
-	directives: [ ROUTER_DIRECTIVES, MasterHeaderComponent ],
 	template: `
 		<fcc-master-header></fcc-master-header>
 		<main class='c-site-main c-site-main--example t-clear'>
