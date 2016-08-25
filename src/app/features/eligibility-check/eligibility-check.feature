@@ -7,4 +7,12 @@ Feature:
 
     Given anyone opens the application
     Then the eligibility check page should be displayed
-    
+
+    Given a colleague is on the eligibility page
+    Then they can indicate that a caller is eligible for our services
+
+    Given a colleague is on the eligibility page
+    Then they can indicate that a caller is ineligible for our services
+
+    Given a colleague is on the eligibility page
+    Then they can see the criteria needed to determine if a caller is eligible for our services
