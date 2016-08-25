@@ -18,7 +18,6 @@ import { OnInit, Component } from '@angular/core';
 				<a id="ineligibleBtn" routerLink="/eligibility-check" class="btn btn--primary btn--large">Eligible</a>
 			</div>
 		</nav>
-		<h3>I am Ben!!!</h3>
 `
 })
 export class EligibilityCheckComponent implements OnInit {
