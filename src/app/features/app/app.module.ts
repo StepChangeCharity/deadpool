@@ -34,6 +34,7 @@ if (process.env.NODE_ENV === 'production') {
 		AppConfig,
 		ConfigurationService,
 		LoggingService,
+
 		HTTP_PROVIDERS,
 		provide(ExceptionHandler, {useClass: LoggingErrorHandler}),
 		provide(APP_INITIALIZER, {
@@ -46,6 +47,4 @@ if (process.env.NODE_ENV === 'production') {
 		appRoutingProviders
 	]
 })
-export class AppModule {
-
-}
+export class AppModule { }

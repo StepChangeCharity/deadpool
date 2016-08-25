@@ -44,7 +44,9 @@ module.exports = {
 			{
 				// Load typescript
 				test: /\.ts/,
-				loaders: ['ts-loader'],
+				loaders: [
+						'ts-loader'
+				],
 				exclude: /node_modules/
 			},
 			{
