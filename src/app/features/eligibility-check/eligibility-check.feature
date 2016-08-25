@@ -7,6 +7,4 @@ Feature:
 
     Given anyone opens the application
     Then the eligibility check page should be displayed
-
-    Given the eligibility check page is viewed
-    Then the
+    
