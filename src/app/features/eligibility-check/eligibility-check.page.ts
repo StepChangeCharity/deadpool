@@ -28,13 +28,15 @@ export class EligibilityCheckPageObject {
 	}
 
 	ineligibleButtonIsPresent(): Promise<void> {
-		return this.callerIneligibleButton.isPresent();;
+		return this.callerIneligibleButton.isPresent();
+	}
+
+	indicateIneligible(): Promise<void> {
+		return this.callerIneligibleButton.click();
 	}
 
 	getEligibilityCriteria(): Promise<void> {
 		return this.eligibilityCriteria.getText();
 	}
-
-
 
 }

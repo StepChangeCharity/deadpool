@@ -23,12 +23,11 @@ Feature:
     Given a colleague is on the eligibility page
     Then they can see the criteria needed to determine if a caller is eligible for our services
 
-@ignore
   Scenario: Colleague can tell client that they are ineligible
 
     Given a colleague is on the eligibility page
-    When they select the ineligible button
-    Then the ineligibility page should be displayed
+    When they indicate that a caller is ineligible
+    Then the caller ineligible page should be displayed
 
 @ignore
   Scenario: Colleague can tell client that they are eligible and start the process

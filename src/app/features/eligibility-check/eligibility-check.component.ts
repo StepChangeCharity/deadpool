@@ -12,7 +12,7 @@ import { OnInit, Component } from '@angular/core';
 		</ul>
 		<nav class="row">
 			<div class="col-3">
-				<a id="ineligibleBtn" routerLink="/eligibility-check" class="btn btn--primary btn--large">Ineligible</a>
+				<a id="ineligibleBtn" routerLink="/caller-ineligible" class="btn btn--primary btn--large">Ineligible</a>
 			</div>
 			<div class="col-3">
 				<a id="eligibleBtn" routerLink="/eligibility-check" class="btn btn--primary btn--large">Eligible</a>
