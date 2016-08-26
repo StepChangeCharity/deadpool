@@ -8,34 +8,57 @@ import Callback = cucumber.CallbackStepDefinition;
 @binding()
 class EligibilityCheckFeatureSteps {
 
-	private eligibitlityPageObject: EligibilityCheckPageObject = new EligibilityCheckPageObject();
+	private eligibilityPageObject: EligibilityCheckPageObject = new EligibilityCheckPageObject();
 
 	@given(/^a colleague is on the eligibility page/)
 	public givenColleagueIsOnTheEligibilityPage(callback): void {
-		this.eligibitlityPageObject.goToEligibilityPage();
+		this.eligibilityPageObject.goToEligibilityPage();
 		callback();
 	}
 
 	@then(/^they can indicate that a caller is eligible for our services/)
 	public thenTheyCanIndicateThatCallerIsEligibleForOurServices (callback): void {
-		expect(this.eligibitlityPageObject.eligibleButtonIsPresent()).to.become(true).and.notify(callback);
+		expect(this.eligibilityPageObject.eligibleButtonIsPresent()).to.become(true).and.notify(callback);
 	}
 
 	@then(/^they can indicate that a caller is ineligible for our services/)
 	public thenTheyCanIndicateThatCallerIsIneligibleForOurServices (callback): void {
-		expect(this.eligibitlityPageObject.ineligibleButtonIsPresent()).to.become(true).and.notify(callback);
+		expect(this.eligibilityPageObject.ineligibleButtonIsPresent()).to.become(true).and.notify(callback);
 	}
 
 	@then(/^they can see the criteria needed to determine if a caller is eligible for our services/)
 	public theyCanSeeCriteriaToDetermineIfCallerIsEligibleForServices (callback): void {
-		expect(this.eligibitlityPageObject.getEligibilityCriteria()).to.become('They are 18 or over\nTheir debts were taken our in the UK').and.notify(callback);
+		expect(this.eligibilityPageObject.getEligibilityCriteria()).to.become('They are 18 or over\nTheir debts were taken our in the UK').and.notify(callback);
 	}
 
 	@then(/^the eligibility check page should be displayed$/)
 	public thenTheEligibilityCheckPageShouldBeDisplayed (callback): void {
-		expect(this.eligibitlityPageObject.getPageTitle()).to.become('Eligibility Check').and.notify(callback);
+		expect(this.eligibilityPageObject.getPageTitle()).to.become('Eligibility Check').and.notify(callback);
 	}
 
+ 	 @when(/^they select the ineligible button$/)
+       public whenTheySelectTheIneligibleButton (callback): void {
+         // Write code here that turns the phrase above into concrete actions
+         callback();
+    }
+
+	@then(/^the ineligibility page should be displayed$/)
+       public thenTheIneligibilityShouldBeDisplayed (callback): void {
+         // Write code here that turns the phrase above into concrete actions
+         callback();
+    }
+	 
+	 @when(/^they select the eligible button$/)
+       public whenTheySelectTheEligibleButton (callback): void {
+         // Write code here that turns the phrase above into concrete actions
+         callback();
+    }
+
+	 @then(/^the start of the process page should be diplayed$/)
+       public thenTheStartOfTheProcessPageShouldBeDiplayed (callback): void {
+         // Write code here that turns the phrase above into concrete actions
+         callback();
+    }
 
 }
 

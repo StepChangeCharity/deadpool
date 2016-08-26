@@ -18,7 +18,8 @@ exports.config = {
 		require: [
 			helpers.root('src/app/**/*.steps.ts')
 		],
-		format: 'pretty'
+		format: 'pretty',
+		tags: ['~@ignore']
 	},
 
 	directConnect: true,

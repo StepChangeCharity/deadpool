@@ -8,11 +8,31 @@ Feature:
     Given anyone opens the application
     Then the eligibility check page should be displayed
 
+  Scenario: Colleague can indicate caller is eligible
+
     Given a colleague is on the eligibility page
     Then they can indicate that a caller is eligible for our services
+
+  Scenario: Colleague can indicate caller is ineligible
 
     Given a colleague is on the eligibility page
     Then they can indicate that a caller is ineligible for our services
 
+  Scenario: Colleague can see eligibility criteria
+
     Given a colleague is on the eligibility page
     Then they can see the criteria needed to determine if a caller is eligible for our services
+
+@ignore
+  Scenario: Colleague can tell client that they are ineligible
+
+    Given a colleague is on the eligibility page
+    When they select the ineligible button
+    Then the ineligibility page should be displayed
+
+@ignore
+  Scenario: Colleague can tell client that they are eligible and start the process
+
+    Given a colleague is on the eligibility page
+    When they select the eligible button
+    Then the start of the process page should be diplayed
