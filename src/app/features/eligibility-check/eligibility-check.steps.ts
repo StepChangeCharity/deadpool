@@ -27,7 +27,7 @@ class EligibilityCheckFeatureSteps {
 	}
 
 	@then(/^they can see the criteria needed to determine if a caller is eligible for our services/)
-	public theyCanSeeCriteriaToDetermineIfCallerIsEligibleForServices(callback): void {
+	public theyCanSeeCriteriaToDetermineCallerIsEligibleForServices(callback): void {
 		expect(this.eligibilityPageObject.getEligibilityCriteria()).to.become('They are 18 or over\nTheir debts were taken our in the UK').and.notify(callback);
 	}
 
