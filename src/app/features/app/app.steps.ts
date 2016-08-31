@@ -1,7 +1,7 @@
 let chai = require('chai').use(require('chai-as-promised'));
 let expect = chai.expect;
 
-import { binding, given, then } from "cucumber-tsflow";
+import { binding, given, when, then } from "cucumber-tsflow";
 import { ApplicationPageObject	 } from "./app.page";
 import Callback = cucumber.CallbackStepDefinition;
 

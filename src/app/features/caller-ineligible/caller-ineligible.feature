@@ -6,4 +6,4 @@ Feature:
   Scenario: Displaying ineligibility page
 
     Given a colleague is on the caller ineligible page
-    Then the caller ineligible page should be displayed
+    Then the caller ineligible page title should be displayed

@@ -31,7 +31,7 @@ class EligibilityCheckFeatureSteps {
 		expect(this.eligibilityPageObject.getEligibilityCriteria()).to.become('They are 18 or over\nTheir debts were taken our in the UK').and.notify(callback);
 	}
 
-	@then(/^the eligibility check page should be displayed$/)
+	@then(/^the eligibility check page title should be displayed$/)
 	public thenTheEligibilityCheckPageShouldBeDisplayed(callback): void {
 		expect(this.eligibilityPageObject.getPageTitle()).to.become('Eligibility Check').and.notify(callback);
 	}
@@ -42,7 +42,7 @@ class EligibilityCheckFeatureSteps {
 		callback();
 	}
 
-	@then(/^the ineligibility page should be displayed$/)
+	@then(/^the caller ineligible page should be displayed$/)
 	public thenTheIneligibilityPageShouldBeDisplayed(callback): void {
 		expect(browser.getCurrentUrl()).to.become(browser.baseUrl + '/caller-ineligible').and.notify(callback);
 	}
