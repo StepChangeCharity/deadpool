@@ -27,7 +27,7 @@ class EligibilityCheckFeatureSteps {
 	}
 
 	@then(/^they can see the criteria needed to determine if a caller is eligible for our services/)
-	public theyCanSeeCriteriaToDetermineCallerIsEligibleForServices(callback): void {
+	public theyCanSeeCriteriaToDetermineIfCallerIsEligibleForServices(callback): void {
 		expect(this.eligibilityPageObject.getEligibilityCriteria()).to.become('They are 18 or over\nTheir debts were taken our in the UK').and.notify(callback);
 	}
 
@@ -43,14 +43,13 @@ class EligibilityCheckFeatureSteps {
 	}
 
 	@then(/^the ineligibility page should be displayed$/)
-	public thenTheIneligibilityShouldBeDisplayed(callback): void {
-		// Write code here that turns the phrase above into concrete actions
-		callback();
+	public thenTheIneligibilityPageShouldBeDisplayed(callback): void {
+		expect(browser.getCurrentUrl()).to.become(browser.baseUrl + '/caller-ineligible').and.notify(callback);
 	}
 
 	@when(/^they select the eligible button$/)
 	public whenTheySelectTheEligibleButton(callback): void {
-		// Write code here that turns the phrase above into concrete actions
+		this.eligibilityPageObject.indicateEligible();
 		callback();
 	}
 
