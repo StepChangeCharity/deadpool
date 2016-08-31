@@ -16,8 +16,8 @@ class CallerIneligibleFeatureSteps {
 		callback();
 	}
 
-	@then(/^the caller ineligible page should be displayed$/)
-	public thenTheCallerIneligiblePageShouldBeDisplayed(callback): void {
+	@then(/^the caller ineligible page title should be displayed$/)
+	public thenTheCallerIneligiblePageTitleShouldBeDisplayed(callback): void {
 		expect(this.callerIneligiblePageObject.getPageTitle()).to.become('Caller Ineligible').and.notify(callback);
 	}
 

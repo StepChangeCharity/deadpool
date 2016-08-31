@@ -3,10 +3,10 @@ Feature:
   I can confirm that the caller is eligible
   So I know that the service is for them
 
-  Scenario: Displaying eligibility page
+  Scenario: Checking the eligibility page title
 
     Given anyone opens the application
-    Then the eligibility check page should be displayed
+    Then the eligibility check page title should be displayed
 
   Scenario: Colleague can indicate caller is eligible
 

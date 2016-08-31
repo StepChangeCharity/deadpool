@@ -31,6 +31,10 @@ export class EligibilityCheckPageObject {
 		return this.callerIneligibleButton.isPresent();
 	}
 
+	indicateEligible(): Promise<void> {
+		return this.callerEligibleButton.click();
+	}
+
 	indicateIneligible(): Promise<void> {
 		return this.callerIneligibleButton.click();
 	}
