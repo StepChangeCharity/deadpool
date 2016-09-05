@@ -11,14 +11,14 @@ class CallerIneligibleFeatureSteps {
 	private callerIneligiblePageObject: CallerIneligiblePageObject = new CallerIneligiblePageObject();
 
 	@given(/^a colleague is on the caller ineligible page/)
-	public givenColleagueIsOnTheCallerIneligiblePage(callback): void {
+	public givenColleagueIsOnTheCallerIneligiblePage(callback: Callback): void {
 		this.callerIneligiblePageObject.goToCallerIneligiblePage();
 		callback();
 	}
 
-	@then(/^the caller ineligible page title should be displayed$/)
-	public thenTheCallerIneligiblePageTitleShouldBeDisplayed(callback): void {
-		expect(this.callerIneligiblePageObject.getPageTitle()).to.become('Caller Ineligible').and.notify(callback);
+	@then(/^the caller ineligible page title should be '(.*)'$/)
+	public thenTheCallerIneligiblePageTitleShouldBeDisplayed(title: string, callback: Callback): void {
+		expect(this.callerIneligiblePageObject.getPageTitle()).to.become(title).and.notify(callback);
 	}
 
 }

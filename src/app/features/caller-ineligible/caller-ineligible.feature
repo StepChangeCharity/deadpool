@@ -6,4 +6,4 @@ Feature:
   Scenario: Checking ineligibility page title
 
     Given a colleague is on the caller ineligible page
-    Then the caller ineligible page title should be displayed
+    Then the caller ineligible page title should be 'Caller Ineligible'

@@ -6,13 +6,15 @@ export class EligibilityCheckPageObject {
 	private pageTitle;
 	private callerEligibleButton;
 	private callerIneligibleButton;
-	private eligibilityCriteria;
+	private eligibilityCriteriaOne;
+	private eligibilityCriteriaTwo;
 
 	constructor() {
 		this.pageTitle = element(by.id('pageTitle'));
 		this.callerEligibleButton = element(by.id('eligibleBtn'));
 		this.callerIneligibleButton = element(by.id('ineligibleBtn'));
-		this.eligibilityCriteria = element(by.id('eligibilityCriteria'));
+		this.eligibilityCriteriaOne = element(by.id('eligibilityCriteriaOne'));
+		this.eligibilityCriteriaTwo = element(by.id('eligibilityCriteriaTwo'));
 	}
 
 	goToEligibilityPage(): Promise<void> {
@@ -39,8 +41,12 @@ export class EligibilityCheckPageObject {
 		return this.callerIneligibleButton.click();
 	}
 
-	getEligibilityCriteria(): Promise<void> {
-		return this.eligibilityCriteria.getText();
+	getEligibilityCriteriaOne(): Promise<void> {
+		return this.eligibilityCriteriaOne.getText();
+	}
+
+	getEligibilityCriteriaTwo(): Promise<void> {
+		return this.eligibilityCriteriaTwo.getText();
 	}
 
 }

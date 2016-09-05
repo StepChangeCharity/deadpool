@@ -6,7 +6,7 @@ Feature:
   Scenario: Checking the eligibility page title
 
     Given anyone opens the application
-    Then the eligibility check page title should be displayed
+    Then the eligibility check page title should be 'Eligibility Check'
 
   Scenario: Colleague can indicate caller is eligible
 
@@ -21,7 +21,8 @@ Feature:
   Scenario: Colleague can see eligibility criteria
 
     Given a colleague is on the eligibility page
-    Then they can see the criteria needed to determine if a caller is eligible for our services
+    Then the first eligibility criteria is are 'They are 18 or over'
+    And the second eligibility criteria is were 'Their debts were taken our in the UK'
 
   Scenario: Colleague can tell client that they are ineligible
 

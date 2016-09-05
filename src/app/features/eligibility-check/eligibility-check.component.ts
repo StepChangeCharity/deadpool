@@ -6,9 +6,9 @@ import { OnInit, Component } from '@angular/core';
 		<h1 id="pageTitle" class="sub-section-title">Eligibility Check</h1>		
 		<p>Confirm that the caller is eligible for our advice process.</p>
 		<p>A caller is eligible if:</p>
-		<ul id="eligibilityCriteria">
-			<li>They are 18 or over</li>
-			<li>Their debts were taken our in the UK</li>
+		<ul>
+			<li id="eligibilityCriteriaOne">They are 18 or over</li>
+			<li id="eligibilityCriteriaTwo">Their debts were taken our in the UK</li>
 		</ul>
 		<nav class="row">
 			<div class="col-3">
