@@ -1,5 +1,5 @@
 let chai = require('chai').use(require('chai-as-promised'));
-let expect = chai.expect;
+let expect: Chai.ExpectStatic = chai.expect;
 
 import { binding, given, when, then } from "cucumber-tsflow";
 import { ApplicationPageObject	 } from "./app.page";
