@@ -22,7 +22,7 @@ Feature:
 
     Given a colleague is on the eligibility page
     Then the first eligibility criteria is are 'They are 18 or over'
-    And the second eligibility criteria is were 'Their debts were taken our in the UK'
+    And the second eligibility criteria is were 'Their debts were taken out in the UK'
 
   Scenario: Colleague can tell client that they are ineligible
 

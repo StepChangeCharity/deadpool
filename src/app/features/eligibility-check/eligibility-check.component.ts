@@ -8,7 +8,7 @@ import { OnInit, Component } from '@angular/core';
 		<p>A caller is eligible if:</p>
 		<ul>
 			<li id="eligibilityCriteriaOne">They are 18 or over</li>
-			<li id="eligibilityCriteriaTwo">Their debts were taken our in the UK</li>
+			<li id="eligibilityCriteriaTwo">Their debts were taken out in the UK</li>
 		</ul>
 		<nav class="row">
 			<div class="col-3">
